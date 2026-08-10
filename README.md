@@ -10,7 +10,11 @@ Também entrego as pontas. Instalo e opero Kubernetes bare-metal sobre Linux, au
 deploy combinando Helm com Bash, e construo o frontend quando o projeto pede. Já lidei com
 RHEL, Ubuntu e Debian no mesmo cluster, cada um no papel que fazia sentido.
 
-Aberto a oportunidades backend .NET ou Python, remoto ou híbrido em São Paulo.
+Aberto a oportunidades backend .NET ou Python, remoto ou híbrido em São Paulo — e a posições
+remotas internacionais. Inglês fluente, incluindo entrevista técnica.
+
+*Open to backend .NET / Python roles, including fully remote international positions.
+Fluent English, technical interviews included.*
 
 ### O que dá pra verificar por aqui
 
