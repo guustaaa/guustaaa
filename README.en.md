@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/backend-banner.png" width="100%" alt="Backend, APIs, containers, data and cloud-native systems">
+</p>
+
 <h1 align="center">Gustavo Henrique Braga</h1>
 
 <p align="center">
@@ -22,7 +26,7 @@
 
 I am 23 and build backend services and the infrastructure they depend on. My day-to-day work spans
 C#/.NET and Python APIs, banking and fiscal integrations, concurrent workloads, automated
-testing, Linux, and Kubernetes. I am comfortable following a problem across boundaries—from
+testing, Linux, and Kubernetes. I am comfortable following a problem across boundaries, from
 application code and SQL to deployment automation, networking, storage, and observability.
 
 Currently open to backend .NET or Python opportunities in Brazil and remote international
@@ -61,13 +65,8 @@ cart persistence, seed-data fallback, and serverless deployment.
 
 `Next.js` `TypeScript` `Supabase` `Tailwind CSS` `Vercel`
 
-### [Colab Finance](https://github.com/guustaaa/colab-finance)
-
-An experimental quantitative-research pipeline with market-regime detection, a weighted
-tree-model ensemble, walk-forward validation, transaction-cost filtering, and risk-based
-position sizing. Educational research, not a performance claim.
-
-`Python` `XGBoost` `LightGBM` `HMM` `Time Series`
+**Other projects:** [Colab Finance](https://github.com/guustaaa/colab-finance), educational
+time-series and risk research in Python.
 
 ## Core toolkit
 

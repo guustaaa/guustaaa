@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/backend-banner.png" width="100%" alt="Backend, APIs, containers, dados e cloud native">
+</p>
+
 <h1 align="center">Gustavo Henrique Braga</h1>
 
 <p align="center">
@@ -22,7 +26,7 @@
 
 Tenho 23 anos e construo serviços backend e a infraestrutura da qual eles dependem. Meu trabalho passa por
 APIs em C#/.NET e Python, integrações bancárias e fiscais, processamento concorrente, testes
-automatizados, Linux e Kubernetes. Gosto de acompanhar um problema através das camadas — do
+automatizados, Linux e Kubernetes. Gosto de acompanhar um problema entre as camadas, do
 código da aplicação e SQL até automação de deploy, rede, storage e observabilidade.
 
 Estou aberto a oportunidades backend .NET ou Python no Brasil e a posições internacionais
@@ -60,13 +64,8 @@ imagens, persistência de carrinho, fallback para dados locais e deploy serverle
 
 `Next.js` `TypeScript` `Supabase` `Tailwind CSS` `Vercel`
 
-### [Colab Finance](https://github.com/guustaaa/colab-finance)
-
-Pipeline experimental de pesquisa quantitativa com detecção de regime de mercado, ensemble
-ponderado de modelos de árvore, validação walk-forward, filtro de custos de transação e
-dimensionamento de posição por risco. Pesquisa educacional, não promessa de desempenho.
-
-`Python` `XGBoost` `LightGBM` `HMM` `Time Series`
+**Outros projetos:** [Colab Finance](https://github.com/guustaaa/colab-finance), pesquisa
+educacional de séries temporais e risco em Python.
 
 ## Tecnologias principais
 
