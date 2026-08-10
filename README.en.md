@@ -64,10 +64,6 @@ position sizing. Educational research, not a performance claim.
 
 `Python` `XGBoost` `LightGBM` `HMM` `Time Series`
 
-I also built a [Linux VM stall monitor](https://github.com/guustaaa/linux-vm-stall-monitor)
-that detects journal gaps and VMware Tools health signals over SSH, with automation-friendly
-exit codes.
-
 ## Core toolkit
 
 <p>

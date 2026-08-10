@@ -63,10 +63,6 @@ dimensionamento de posição por risco. Pesquisa educacional, não promessa de d
 
 `Python` `XGBoost` `LightGBM` `HMM` `Time Series`
 
-Também construí um [monitor de travamentos em VMs Linux](https://github.com/guustaaa/linux-vm-stall-monitor)
-para detectar lacunas no journal e sinais de saúde do VMware Tools por SSH, com códigos de
-saída próprios para automação.
-
 ## Tecnologias principais
 
 <p>
