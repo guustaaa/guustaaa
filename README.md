@@ -1,81 +1,84 @@
-## Gustavo Henrique — Desenvolvedor Backend .NET / C# e Python
+<h1 align="center">Gustavo Henrique Braga</h1>
 
-Backend é onde eu quero estar, mas não é só o que eu faço. Trabalho com integrações fiscais
-e bancárias no Brasil — boleto, CNAB, PIX e NFS-e — quase sempre em cima das bibliotecas
-nativas do ACBr. A parte que me interessa de verdade é o que acontece quando várias empresas
-usam o mesmo processo ao mesmo tempo: concorrência, isolamento de estado e as garantias que
-você precisa provar com teste, não com comentário no código.
+<p align="center">
+  <strong>Backend Developer · .NET / C# · Python · APIs · Cloud Native</strong>
+</p>
 
-Também entrego as pontas. Instalo e opero Kubernetes bare-metal sobre Linux, automatizo
-deploy combinando Helm com Bash, e construo o frontend quando o projeto pede. Já lidei com
-RHEL, Ubuntu e Debian no mesmo cluster, cada um no papel que fazia sentido.
+<p align="center">
+  <a href="https://www.linkedin.com/in/gustavo-henrique-braga/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:gustavo.criser@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <img src="https://img.shields.io/badge/São_Paulo-Brazil-009739?style=flat-square" alt="São Paulo, Brazil">
+  <img src="https://img.shields.io/badge/English-Fluent-4B5563?style=flat-square" alt="Fluent English">
+</p>
 
-Aberto a oportunidades backend .NET ou Python, remoto ou híbrido em São Paulo — e a posições
-remotas internacionais. Inglês fluente, incluindo entrevista técnica.
+I build backend services and the infrastructure they depend on. My day-to-day work spans
+C#/.NET and Python APIs, banking and fiscal integrations, concurrent workloads, automated
+testing, Linux, and Kubernetes. I am comfortable following a problem across boundaries—from
+application code and SQL to deployment automation, networking, storage, and observability.
 
-*Open to backend .NET / Python roles, including fully remote international positions.
-Fluent English, technical interviews included.*
+Currently open to backend .NET or Python opportunities in Brazil and remote international
+roles. I work fluently in Portuguese and English.
 
-### O que dá pra verificar por aqui
+## Selected work
 
-**Concorrência sobre biblioteca nativa.** Um handle da ACBrLib carrega estado mutável e não
-é thread-safe, mas o mesmo processo emite boletos para centenas de empresas. O pool em
-[`acbr-boleto-dotnet`](https://github.com/guustaaa/acbr-boleto-dotnet) é dimensionado por
-concorrência em vez de por empresa: cada handle fica preso ao hash da configuração que o
-inicializou, e não existe caminho de código que reconfigure um handle vivo para outra
-empresa. 113 testes determinísticos rodam em CI sem a biblioteca nativa presente.
+### [Kubernetes Observability Lab](https://github.com/guustaaa/kubernetes-observability-lab)
 
-**Defeito de fornecedor diagnosticado em produção.** O motor de relatório nativo corrompia
-PDFs ao reutilizar um handle e não expõe API de reset. A mitigação foi descartar o handle
-depois de cada geração — com teste de regressão, e com a limitação documentada no README em
-vez de escondida.
+A reproducible k3s environment that observes the full dependency chain beneath a pod:
+Prometheus, Grafana, Loki, WireGuard, CIFS/SMB, custom exporters, correlation dashboards,
+and alerts. It distinguishes application symptoms from VPN, network, and storage failures.
 
-**Observabilidade da cadeia inteira, não só do pod.** Quando o storage chega pela rede, um pod
-depende de CSI SMB → cliente CIFS → túnel → servidor SMB remoto, e qualquer elo travado produz
-o mesmo sintoma. No
-[`kubernetes-observability-lab`](https://github.com/guustaaa/kubernetes-observability-lab)
-escrevi exporters para as camadas que ficam cegas — CIFS lendo `/proc/fs/cifs` e `/dev/kmsg`,
-WireGuard por idade de handshake — e uma timeline que atribui o incidente a VPN, backend de
-storage ou rede, em vez de deixar no "reiniciou sozinho".
+`Kubernetes` `Prometheus` `Grafana` `Loki` `WireGuard` `Shell`
 
-**Modelos que não fingem funcionar.** Em [`colab-finance`](https://github.com/guustaaa/colab-finance)
-a validação é walk-forward justamente para não me enganar com look-ahead bias, e o
-dimensionamento de posição sai por critério de Kelly em vez de chute. É um sistema de
-pesquisa, não uma promessa de acurácia.
+### [Linux VM Stall Monitor](https://github.com/guustaaa/linux-vm-stall-monitor)
 
-### Projetos
+A deterministic Bash and PowerShell monitor for VMware Linux guests. It detects long journal
+gaps and VMware Tools health signals, returns automation-friendly exit codes, and can run
+remotely without storing credentials.
 
-| Projeto | Problema que resolve | Stack |
-|---|---|---|
-| [acbr-boleto-dotnet](https://github.com/guustaaa/acbr-boleto-dotnet) | Emissão concorrente de boletos multiempresa sem vazamento de estado entre elas | C#, .NET 8, xUnit, GitHub Actions |
-| [kubernetes-observability-lab](https://github.com/guustaaa/kubernetes-observability-lab) | Atribuir a causa de um pod travado: VPN, backend de storage ou rede | k3s, Prometheus, Grafana, Loki, WireGuard |
-| [customer-management-api](https://github.com/guustaaa/customer-management-api) | Gestão de clientes, fornecedores e contas a pagar/receber, com autenticação e consulta de CNPJ | Python, FastAPI, SQLAlchemy, Docker |
-| [colab-finance](https://github.com/guustaaa/colab-finance) | Pesquisa de estratégias de câmbio com regime de mercado e validação sem look-ahead | Python, XGBoost, LightGBM, hmmlearn |
-| [th-parfums-storefront](https://github.com/guustaaa/th-parfums-storefront) | Vitrine e painel administrativo entregues ponta a ponta, em deploy serverless | Next.js, TypeScript, Supabase, Vercel |
-| [acbr-nfse-version-harness](https://github.com/guustaaa/acbr-nfse-version-harness) | Comparar processamento entre versões de layout de NFS-e antes do deploy | Object Pascal, Lazarus |
+`Linux` `Bash` `PowerShell` `SSH` `VMware`
 
-A edição pública do ACBr Boleto é autorizada pela Strategix e não contém credenciais,
-certificados ou dados de clientes.
+### [Customer Management API](https://github.com/guustaaa/customer-management-api)
 
-### Stack
+A containerized FastAPI application for customers, suppliers, accounts payable and
+receivable, authentication, and Brazilian company-registry lookup, with a web interface for
+the API workflows.
 
-**Backend** `C#` · `.NET 8` · `Python` · `FastAPI` · `APIs REST` · `microsserviços`
-**Domínio** `ACBr` · `boleto` · `CNAB` · `PIX` · `NFS-e` · `P/Invoke` · `concorrência`
-**Dados** `PostgreSQL` · `SQL Server`
-**Infra** `Kubernetes bare-metal` · `Helm` · `Docker` · `RHEL` · `Ubuntu` · `Debian` · `Bash` · `GitHub Actions`
-**Frontend** `TypeScript` · `React` · `Next.js`
+`Python` `FastAPI` `SQLAlchemy` `Docker` `REST API`
 
-### Construindo agora
+### [TH Parfums Storefront](https://github.com/guustaaa/th-parfums-storefront)
 
-Uma API de registro de boleto em ASP.NET Core — idempotência, reconciliação de webhook
-bancário e outbox, contra um banco simulado que responde duas vezes, responde tarde e às
-vezes não responde. É o problema real de quem integra com banco, e é o que estou usando para
-fechar as lacunas que ainda não tenho evidência pública: EF Core, mensageria e teste de
-integração com container.
+A full-stack storefront and authenticated admin panel with product management, image upload,
+cart persistence, seed-data fallback, and serverless deployment.
 
-### Contato
+`Next.js` `TypeScript` `Supabase` `Tailwind CSS` `Vercel`
 
-gustavo.criser@gmail.com · São Paulo, SP
+### [Colab Finance](https://github.com/guustaaa/colab-finance)
 
-<!-- PENDING: add LinkedIn here once the profile URL exists -->
+An experimental quantitative-research pipeline with market-regime detection, a weighted
+tree-model ensemble, walk-forward validation, transaction-cost filtering, and risk-based
+position sizing. Educational research, not a performance claim.
 
+`Python` `XGBoost` `LightGBM` `HMM` `Time Series`
+
+## Core toolkit
+
+<p>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,python,fastapi,postgres,docker,kubernetes,linux,bash,powershell,git,githubactions,ts,nextjs,react&perline=8" alt="C#, .NET, Python, FastAPI, PostgreSQL, Docker, Kubernetes, Linux, Bash, PowerShell, Git, GitHub Actions, TypeScript, Next.js and React">
+</p>
+
+**Backend and data:** C# · .NET 8 · Python · FastAPI · REST APIs · PostgreSQL · SQL Server
+
+**Platform and delivery:** Kubernetes · Helm · Docker · Linux · Bash · PowerShell · GitHub Actions
+
+**Frontend when needed:** TypeScript · React · Next.js · Supabase
+
+## Current focus
+
+Deepening ASP.NET Core and EF Core through an API designed around idempotency, webhook
+reconciliation, reliable messaging, and container-based integration tests.
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/gustavo-henrique-braga/">LinkedIn</a>
+  ·
+  <a href="mailto:gustavo.criser@gmail.com">Email</a>
+</p>
