@@ -36,6 +36,7 @@ pesquisa, não uma promessa de acurácia.
 | Projeto | Problema que resolve | Stack |
 |---|---|---|
 | [acbr-boleto-dotnet](https://github.com/guustaaa/acbr-boleto-dotnet) | Emissão concorrente de boletos multiempresa sem vazamento de estado entre elas | C#, .NET 8, xUnit, GitHub Actions |
+| [customer-management-api](https://github.com/guustaaa/customer-management-api) | Gestão de clientes, fornecedores e contas a pagar/receber, com autenticação e consulta de CNPJ | Python, FastAPI, SQLAlchemy, Docker |
 | [colab-finance](https://github.com/guustaaa/colab-finance) | Pesquisa de estratégias de câmbio com regime de mercado e validação sem look-ahead | Python, XGBoost, LightGBM, hmmlearn |
 | [th-parfums-storefront](https://github.com/guustaaa/th-parfums-storefront) | Vitrine e painel administrativo entregues ponta a ponta, em deploy serverless | Next.js, TypeScript, Supabase, Vercel |
 | [acbr-nfse-version-harness](https://github.com/guustaaa/acbr-nfse-version-harness) | Comparar processamento entre versões de layout de NFS-e antes do deploy | Object Pascal, Lazarus |
