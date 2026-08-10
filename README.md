@@ -26,6 +26,14 @@ PDFs ao reutilizar um handle e não expõe API de reset. A mitigação foi desca
 depois de cada geração — com teste de regressão, e com a limitação documentada no README em
 vez de escondida.
 
+**Observabilidade da cadeia inteira, não só do pod.** Quando o storage chega pela rede, um pod
+depende de CSI SMB → cliente CIFS → túnel → servidor SMB remoto, e qualquer elo travado produz
+o mesmo sintoma. No
+[`kubernetes-observability-lab`](https://github.com/guustaaa/kubernetes-observability-lab)
+escrevi exporters para as camadas que ficam cegas — CIFS lendo `/proc/fs/cifs` e `/dev/kmsg`,
+WireGuard por idade de handshake — e uma timeline que atribui o incidente a VPN, backend de
+storage ou rede, em vez de deixar no "reiniciou sozinho".
+
 **Modelos que não fingem funcionar.** Em [`colab-finance`](https://github.com/guustaaa/colab-finance)
 a validação é walk-forward justamente para não me enganar com look-ahead bias, e o
 dimensionamento de posição sai por critério de Kelly em vez de chute. É um sistema de
@@ -36,6 +44,7 @@ pesquisa, não uma promessa de acurácia.
 | Projeto | Problema que resolve | Stack |
 |---|---|---|
 | [acbr-boleto-dotnet](https://github.com/guustaaa/acbr-boleto-dotnet) | Emissão concorrente de boletos multiempresa sem vazamento de estado entre elas | C#, .NET 8, xUnit, GitHub Actions |
+| [kubernetes-observability-lab](https://github.com/guustaaa/kubernetes-observability-lab) | Atribuir a causa de um pod travado: VPN, backend de storage ou rede | k3s, Prometheus, Grafana, Loki, WireGuard |
 | [customer-management-api](https://github.com/guustaaa/customer-management-api) | Gestão de clientes, fornecedores e contas a pagar/receber, com autenticação e consulta de CNPJ | Python, FastAPI, SQLAlchemy, Docker |
 | [colab-finance](https://github.com/guustaaa/colab-finance) | Pesquisa de estratégias de câmbio com regime de mercado e validação sem look-ahead | Python, XGBoost, LightGBM, hmmlearn |
 | [th-parfums-storefront](https://github.com/guustaaa/th-parfums-storefront) | Vitrine e painel administrativo entregues ponta a ponta, em deploy serverless | Next.js, TypeScript, Supabase, Vercel |
