@@ -1,81 +1,88 @@
 <h1 align="center">Gustavo Henrique Braga</h1>
 
 <p align="center">
-  <strong>Backend Developer · .NET / C# · Python · APIs · Cloud Native</strong>
+  <strong>Português</strong> · <a href="./README.en.md">English</a>
+</p>
+
+<p align="center">
+  <strong>Desenvolvedor Backend · .NET / C# · Python · APIs · Cloud Native</strong>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gustavo-henrique-braga/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:gustavo.criser@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/São_Paulo-Brazil-009739?style=flat-square" alt="São Paulo, Brazil">
-  <img src="https://img.shields.io/badge/English-Fluent-4B5563?style=flat-square" alt="Fluent English">
+  <img src="https://img.shields.io/badge/São_Paulo-Brasil-009739?style=flat-square" alt="São Paulo, Brasil">
+  <img src="https://img.shields.io/badge/Inglês-Fluente-4B5563?style=flat-square" alt="Inglês fluente">
 </p>
 
-I build backend services and the infrastructure they depend on. My day-to-day work spans
-C#/.NET and Python APIs, banking and fiscal integrations, concurrent workloads, automated
-testing, Linux, and Kubernetes. I am comfortable following a problem across boundaries—from
-application code and SQL to deployment automation, networking, storage, and observability.
+Construo serviços backend e a infraestrutura da qual eles dependem. Meu trabalho passa por
+APIs em C#/.NET e Python, integrações bancárias e fiscais, processamento concorrente, testes
+automatizados, Linux e Kubernetes. Gosto de acompanhar um problema através das camadas — do
+código da aplicação e SQL até automação de deploy, rede, storage e observabilidade.
 
-Currently open to backend .NET or Python opportunities in Brazil and remote international
-roles. I work fluently in Portuguese and English.
+Estou aberto a oportunidades backend .NET ou Python no Brasil e a posições internacionais
+remotas. Trabalho fluentemente em português e inglês.
 
-## Selected work
+## Projetos selecionados
+
+### [Concorrência e interop nativo em .NET](https://github.com/guustaaa/acbr-boleto-dotnet)
+
+Camada .NET 8 para processamento concorrente sobre uma biblioteca nativa com estado mutável.
+O pool usa leases exclusivos e afinidade por configuração para impedir vazamento de estado
+entre empresas, com as garantias críticas cobertas por 113 testes determinísticos em CI.
+
+`C#` `.NET 8` `P/Invoke` `Concorrência` `xUnit` `GitHub Actions`
 
 ### [Kubernetes Observability Lab](https://github.com/guustaaa/kubernetes-observability-lab)
 
-A reproducible k3s environment that observes the full dependency chain beneath a pod:
-Prometheus, Grafana, Loki, WireGuard, CIFS/SMB, custom exporters, correlation dashboards,
-and alerts. It distinguishes application symptoms from VPN, network, and storage failures.
+Ambiente k3s reproduzível que observa toda a cadeia de dependências abaixo de um pod:
+Prometheus, Grafana, Loki, WireGuard, CIFS/SMB, exporters próprios, dashboards de correlação
+e alertas. Diferencia sintomas da aplicação de falhas em VPN, rede e storage.
 
 `Kubernetes` `Prometheus` `Grafana` `Loki` `WireGuard` `Shell`
 
-### [Linux VM Stall Monitor](https://github.com/guustaaa/linux-vm-stall-monitor)
-
-A deterministic Bash and PowerShell monitor for VMware Linux guests. It detects long journal
-gaps and VMware Tools health signals, returns automation-friendly exit codes, and can run
-remotely without storing credentials.
-
-`Linux` `Bash` `PowerShell` `SSH` `VMware`
-
 ### [Customer Management API](https://github.com/guustaaa/customer-management-api)
 
-A containerized FastAPI application for customers, suppliers, accounts payable and
-receivable, authentication, and Brazilian company-registry lookup, with a web interface for
-the API workflows.
+Aplicação FastAPI em container para clientes, fornecedores, contas a pagar e receber,
+autenticação e consulta de CNPJ, com interface web para os fluxos da API.
 
 `Python` `FastAPI` `SQLAlchemy` `Docker` `REST API`
 
 ### [TH Parfums Storefront](https://github.com/guustaaa/th-parfums-storefront)
 
-A full-stack storefront and authenticated admin panel with product management, image upload,
-cart persistence, seed-data fallback, and serverless deployment.
+Vitrine full-stack e painel administrativo autenticado com gestão de produtos, upload de
+imagens, persistência de carrinho, fallback para dados locais e deploy serverless.
 
 `Next.js` `TypeScript` `Supabase` `Tailwind CSS` `Vercel`
 
 ### [Colab Finance](https://github.com/guustaaa/colab-finance)
 
-An experimental quantitative-research pipeline with market-regime detection, a weighted
-tree-model ensemble, walk-forward validation, transaction-cost filtering, and risk-based
-position sizing. Educational research, not a performance claim.
+Pipeline experimental de pesquisa quantitativa com detecção de regime de mercado, ensemble
+ponderado de modelos de árvore, validação walk-forward, filtro de custos de transação e
+dimensionamento de posição por risco. Pesquisa educacional, não promessa de desempenho.
 
 `Python` `XGBoost` `LightGBM` `HMM` `Time Series`
 
-## Core toolkit
+Também construí um [monitor de travamentos em VMs Linux](https://github.com/guustaaa/linux-vm-stall-monitor)
+para detectar lacunas no journal e sinais de saúde do VMware Tools por SSH, com códigos de
+saída próprios para automação.
+
+## Tecnologias principais
 
 <p>
   <img src="https://skillicons.dev/icons?i=cs,dotnet,python,fastapi,postgres,docker,kubernetes,linux,bash,powershell,git,githubactions,ts,nextjs,react&perline=8" alt="C#, .NET, Python, FastAPI, PostgreSQL, Docker, Kubernetes, Linux, Bash, PowerShell, Git, GitHub Actions, TypeScript, Next.js and React">
 </p>
 
-**Backend and data:** C# · .NET 8 · Python · FastAPI · REST APIs · PostgreSQL · SQL Server
+**Backend e dados:** C# · .NET 8 · Python · FastAPI · APIs REST · PostgreSQL · SQL Server
 
-**Platform and delivery:** Kubernetes · Helm · Docker · Linux · Bash · PowerShell · GitHub Actions
+**Plataforma e entrega:** Kubernetes · Helm · Docker · Linux · Bash · PowerShell · GitHub Actions
 
-**Frontend when needed:** TypeScript · React · Next.js · Supabase
+**Frontend quando necessário:** TypeScript · React · Next.js · Supabase
 
-## Current focus
+## Foco atual
 
-Deepening ASP.NET Core and EF Core through an API designed around idempotency, webhook
-reconciliation, reliable messaging, and container-based integration tests.
+Aprofundando ASP.NET Core e EF Core por meio de uma API construída em torno de idempotência,
+reconciliação de webhooks, mensageria confiável e testes de integração com containers.
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gustavo-henrique-braga/">LinkedIn</a>
