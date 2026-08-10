@@ -5,6 +5,10 @@
 </p>
 
 <p align="center">
+  <img src="./assets/gustavo-braga.jpg" width="160" alt="Foto de Gustavo Henrique Braga">
+</p>
+
+<p align="center">
   <strong>Desenvolvedor Backend · .NET / C# · Python · APIs · Cloud Native</strong>
 </p>
 
@@ -13,9 +17,10 @@
   <a href="mailto:gustavo.criser@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/São_Paulo-Brasil-009739?style=flat-square" alt="São Paulo, Brasil">
   <img src="https://img.shields.io/badge/Inglês-Fluente-4B5563?style=flat-square" alt="Inglês fluente">
+  <img src="https://img.shields.io/badge/Idade-23_anos-4B5563?style=flat-square" alt="23 anos">
 </p>
 
-Construo serviços backend e a infraestrutura da qual eles dependem. Meu trabalho passa por
+Tenho 23 anos e construo serviços backend e a infraestrutura da qual eles dependem. Meu trabalho passa por
 APIs em C#/.NET e Python, integrações bancárias e fiscais, processamento concorrente, testes
 automatizados, Linux e Kubernetes. Gosto de acompanhar um problema através das camadas — do
 código da aplicação e SQL até automação de deploy, rede, storage e observabilidade.
