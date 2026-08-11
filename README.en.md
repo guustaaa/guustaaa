@@ -9,10 +9,6 @@
 </p>
 
 <p align="center">
-  <img src="./assets/gustavo-braga.jpg" width="160" alt="Portrait of Gustavo Henrique Braga">
-</p>
-
-<p align="center">
   <strong>Backend Developer · .NET / C# · Python · APIs · Cloud Native</strong>
 </p>
 
